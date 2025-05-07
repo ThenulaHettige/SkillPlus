@@ -35,7 +35,7 @@ import com.skillplus.backend.repository.StatusRepository;
 import com.skillplus.backend.service.UserService;
 
 import jakarta.servlet.http.HttpServletRequest;
-
+//authcontroller
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
