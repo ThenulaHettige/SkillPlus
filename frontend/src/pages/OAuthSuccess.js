@@ -9,6 +9,9 @@ export default function OAuthSuccess() {
   const token = params.get('token');
   const { login } = useAuth();
   const navigate = useNavigate();
+// Created OAuthSuccess component to manage Google OAuth redirection
+// Extracts token from URL, logs in user, and redirects accordingly
+// Shows success or error toast notifications based on login result
 
   useEffect(() => {
     if (token) {
