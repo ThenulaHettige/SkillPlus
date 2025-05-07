@@ -35,6 +35,7 @@ public class CommentController {
 
     @Autowired
     private PostRepository postRepository;
+    //comment controller
 
     @PostMapping("/{postId}")
     public Comment addComment(@PathVariable Long postId, @RequestBody Comment comment, Principal principal) {
@@ -50,7 +51,7 @@ public class CommentController {
         Post post = postRepository.findById(postId).orElseThrow();
         return commentService.getCommentsByPost(post);
     }
-
+//commentid
     @PutMapping("/{commentId}")
     public ResponseEntity<Comment> updateComment(@PathVariable Long commentId, @RequestBody Map<String, String> request, Principal principal) {
         Comment comment = commentService.getCommentById(commentId);
@@ -67,7 +68,7 @@ public class CommentController {
         String currentUser = principal.getName();
         boolean isOwner = comment.getUser().getEmail().equals(currentUser);
         boolean isPostOwner = comment.getPost().getUser().getEmail().equals(currentUser);
-
+//create a if
         if (isOwner || isPostOwner) {
             commentService.deleteById(commentId);
             return ResponseEntity.ok().build();
