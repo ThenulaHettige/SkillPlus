@@ -34,7 +34,9 @@ import {
   Notifications,
 } from "@mui/icons-material";
 import "swiper/css";
-
+// Added Instagram-style home feed with tabs for following, explore, and my posts
+// Integrated like, comment, status viewer, and follow functionalities
+// Used Swiper for media sliders and MUI for UI components
 import Leftsidebar from "../components/homepage/Leftsidebar";
 import StatusViewer from "../components/homepage/StatusViewer";
 import RightSidebar from "../components/homepage/Rightsidebar";
