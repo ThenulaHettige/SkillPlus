@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Leftsidebar from "../components/homepage/Leftsidebar";
+// This component allows users to edit an existing post, including updating the title, description, and media files.
 
 export default function EditPost() {
   const { id } = useParams();
