@@ -7,7 +7,11 @@ import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "../api/axiosConfig";
 import { toast } from "react-toastify";
-
+/// Created AddPost component for submitting posts with title, description, and media
+/// Implemented file selection for images/videos and preview with delete option
+/// Integrated toast notifications for success and error feedback
+/// Added LinearProgress bar for upload indication
+/// Styled the component using MUI theme and best UX practices
 export default function AddPost({ onClose, onPostCreated }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
