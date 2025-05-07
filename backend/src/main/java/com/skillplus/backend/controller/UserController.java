@@ -13,7 +13,7 @@ import com.skillplus.backend.entity.User;
 import com.skillplus.backend.repository.UserRepository;
 
 import jakarta.servlet.http.HttpServletRequest;
-
+//user controller 
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
